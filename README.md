@@ -3,7 +3,7 @@
 introductory Kubernetes course on Udemy: https://www.udemy.com/course/kubernetes-fast-track/
 Below are few things that i've learnrt
 
-Docker & kubernetes goes hand in hand
+Docker & kubernetes goes hand in hand. Kubernetes helps you manage containerized apps in diff envs (physical, cloud & cloud). 
 Docker is used as the container runtime and kubernestes as the platform to deploy the images
 Kubernetes is a wrapper for Docker, from Docker side of things, docker images are used which then become containers
 
@@ -17,6 +17,16 @@ conclusion: everything get wrapped up
             containers get wrapped up in pods
             pods get wrapped in replica set which controls the amount of pods
             replica sets get wrapped in a deployment (yaml file)
+            
+# what problems does kubernetes solve & its features ?
+  demand for managing 100s of containers
+  high availability & sclability 
+  disaster recovery - does not lose any data (backup & restore)
+
+# basic kubernetes architecture
+a master connected to numerous workers nodes 
+
+  
 ```            
 
 
