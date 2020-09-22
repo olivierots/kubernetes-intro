@@ -16,20 +16,30 @@ conclusion: everything get wrapped up
             replica sets get wrapped in a deployment (yaml file)
 ```            
 
+
 ```
-### useful comands ###
-kubectl create -f <>
+==== useful commands ====
+kubectl create -f <file-name>
 kubectl get pods 
 kubectl exec -it <pod-name> -- /bin/bash ==> exec into a container
 kubectl log <pod-name>  
 kubectl describe pod <pod-name>  
 
-# creating a YAML file - useful for debugging 
+# creating a YAML file - useful for debugging - get any kubernetes objects & convert it into a yaml file 
 kubectl get service
-kubectl get service "service-name" -o yaml > "service-name".yaml 
+kubectl get service "service-name" -o yaml > "where-you-want-output-redirected".yaml 
 
 # how to edit any kube objects on the fly 
 e.g  kubectl get deployments 
      kubectl edit deployment <deployment-name>
-  
+# see CPU & mem usage
+minikube addons enable metrics-server  ==> enable the metrics server
+kubectl top pod ==> shows all your pods 
+kubectl top pod <pod-name>
+watch kubectl top pod ==> refreshes very 2secs 
+
+# accessing the dashbaord
+minikube dashboard
+
+
 ```
