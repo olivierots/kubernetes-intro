@@ -1,6 +1,7 @@
 # kubernetes-intro
 ```
 introductory Kubernetes course on Udemy: https://www.udemy.com/course/kubernetes-fast-track/
+Below are few things that i've learnrt
 
 Docker & kubernetes goes hand in hand
 Docker is used as the container runtime and kubernestes as the platform to deploy the images
