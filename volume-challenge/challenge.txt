@@ -1,0 +1,9 @@
+
+1. created a persistent volume (PV) called: challenge-PV
+   with StorageClassname 'challenge' and 2Gi in size
+
+2. create a persistent volume cliam (PVC) called:
+   challenge-pvc and 1Gi in size and using the PV you're
+   created.
+
+3. mount it to a pod. Image NGINX and path: /var/www/html 

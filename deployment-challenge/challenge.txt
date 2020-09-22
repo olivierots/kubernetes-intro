@@ -1,0 +1,9 @@
+1. create a new YAML file called deploymentchallenge.yaml 
+2. create a deployment 
+3. deployment name: challenge
+4. must have 3 running pods
+5. image will be ubuntu
+6. label: os:ubuntu 
+7. runs on port 8080
+8. mustnt use more than 500mb of RAM
+9. CPU can be set to 500m 

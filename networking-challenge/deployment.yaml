@@ -1,0 +1,33 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  webdeployment
+  labels:
+    name:  webdeployment
+spec:
+  replicas: 2       # No of pods we need running 
+  selector:
+    matchLabels:
+      server: web
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        server: web  # the label needed in the nodeport service config
+    spec:
+      containers:
+      - name: webserver
+        image: httpd:2.4
+        resources:
+          limits:
+            memory: "500Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 80
+
+

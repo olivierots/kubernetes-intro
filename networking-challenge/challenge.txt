@@ -1,0 +1,9 @@
+1. create a deployment using an httpd image 
+2. must have 2 running pods 
+3. create a node port service to expose it
+4. node port to use port: 31234
+5. to check all is working, on your web browser, use your minikube ip:node port 
+
+
+
+

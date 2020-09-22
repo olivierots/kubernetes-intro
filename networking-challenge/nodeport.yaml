@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nodesrvc     # service name 
+spec:
+  selector:
+    server: web      # label specified in the deployment config 
+  type:  NodePort
+  ports:
+  - port: 8080       # port the service runs on
+    targetPort:  80  # the port on the container 
+    nodePort: 31234  # the port to expose on the vm & we will be able to connect on that 
