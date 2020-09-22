@@ -1,4 +1,5 @@
 # kubernetes-intro
+```
 Docker & kubernetes goes hand in hand
 Docker is used as the container runtime and kubernestes as the platform to deploy the images
 Kubernetes is a wrapper for Docker, from Docker side of things, docker images are used which then become containers
@@ -13,9 +14,9 @@ conclusion: everything get wrapped up
             containers get wrapped up in pods
             pods get wrapped in replica set which controls the amount of pods
             replica sets get wrapped in a deployment (yaml file)
-            
+```            
 
-
+```
 ### useful comands ###
 kubectl create -f <>
 kubectl get pods 
@@ -31,3 +32,4 @@ kubectl get service "service-name" -o yaml > "service-name".yaml
 e.g  kubectl get deployments 
      kubectl edit deployment <deployment-name>
   
+```
