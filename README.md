@@ -2,7 +2,7 @@
 === kubernetes-intro ===
 
 introductory Kubernetes course on Udemy: https://www.udemy.com/course/kubernetes-fast-track/
-Below are few things that i've learnrt
+Below are few things that i've learnt
 
 Docker & kubernetes goes hand in hand. Kubernetes helps you manage containerized apps in diff envs (physical, cloud & VMs). 
 Docker is used as the container runtime and kubernestes as the platform to deploy the images
